@@ -1,0 +1,12 @@
+body {
+  background: #f1f5f9;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Глушим старый сегментированный переключатель, если он закеширован */
+.ant-segmented {
+  display: none !important;
+}

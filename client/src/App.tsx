@@ -1,14 +1,21 @@
+import "antd/dist/reset.css";
 import "@/App.css";
-import { AuthLayout } from "./features/auth";
+
+import { useState } from "react";
+
+import { HistoryPage } from "@/pages/history";
+import { PosPage } from "@/pages/pos";
 
 function App() {
-	return (
-		<main>
-			<h3 className="bg-red-500">
-				<AuthLayout />
-			</h3>
-		</main>
-	);
+  const [view, setView] = useState<"pos" | "history">("pos");
+
+  return (
+    view === "pos" ? (
+      <PosPage onNavigate={setView} />
+    ) : (
+      <HistoryPage onNavigate={setView} />
+    )
+  );
 }
 
 export default App;

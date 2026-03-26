@@ -1,0 +1,93 @@
+.pos-history {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f7fafc 0%, #f1f5f9 100%);
+  padding: 20px;
+}
+
+.pos-history__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 12px 16px;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.06);
+}
+
+.pos-history__title {
+  margin: 0;
+  font-weight: 800;
+}
+
+.pos-history__title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pos-history__back {
+  border-radius: 10px;
+}
+
+.pos-history__filters {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.pos-history__body {
+  margin-top: 14px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.06);
+}
+
+.pos-history__list .ant-list-item {
+  padding: 14px 0;
+  border-color: #e2e8f0;
+}
+
+.pos-history__meta {
+  display: grid;
+  grid-template-columns: 160px 1fr 120px 120px;
+  gap: 12px;
+  align-items: center;
+}
+
+.pos-history__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.pos-history__status--paid {
+  background: #ecfdf3;
+  color: #15803d;
+}
+
+.pos-history__status--refunded {
+  background: #fff1f2;
+  color: #b91c1c;
+}
+
+.pos-history__status--pending {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.pos-history__action {
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 900px) {
+  .pos-history__meta {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
