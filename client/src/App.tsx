@@ -5,7 +5,6 @@ function App() {
 	return (
 		<main>
 			<h3 className="bg-red-500">
-				dsa
 				<AuthLayout />
 			</h3>
 		</main>
