@@ -1,0 +1,23 @@
+export const ApiRoutes = {
+  LOGOUT: "/auth/logout",
+  POSITIONS: "/positions",
+  POSITION_BY_ID: (id: string | number) => `/positions/${id}`,
+  LOGIN: "/auth/login",
+  SEND_OTP: "/auth/send-otp",
+  ME: "/auth/me",
+  APPLICATIONS: "/applications",
+  APPLICATIONS_MY: "/applications/my",
+  APPLICATIONS_STATS: "/applications/stats",
+  TEMPLATES: "/templates",
+  TEMPLATE_BY_ID: (id: string | number) => `/templates/${id}`,
+  TEMPLATES_APPLY: "/templates/apply",
+  QUESTIONNAIRES: "/questionnaires",
+  QUESTIONNAIRE_BY_ID: (id: string | number) => `/questionnaires/${id}`,
+  QUESTIONNAIRES_APPLY: "/questionnaires/apply",
+  REGISTRATION_STATUS: "/settings/registration-status",
+  EXAM_STATUS: "/settings/exam-status",
+  TEST_RESULTS: "/applications/test-results",
+  TEST_RESULTS_STATS: "/applications/test-results/stats",
+  TEST_RESULT_BY_ID: (id: string | number) =>
+    `/applications/test-results/${id}`,
+} as const;
